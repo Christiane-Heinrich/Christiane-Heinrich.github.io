@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atelier der Farben | Kunstmalerin</title>
     <style>
+	
         /* Grunddesign */
         body {
             font-family: 'Rockwell', Arial, sans-serif;
@@ -54,7 +55,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: url('Hintergrund_1.jpeg') no-repeat center center;
+            background: url('hintergrund_1.jpeg') no-repeat center center;
             background-size: cover;
             height: 100vh;
             text-align: center;
@@ -65,6 +66,15 @@
             padding: 4rem 2rem;
             max-width: 1000px;
             margin: auto;
+        }
+		
+		h1 {
+			position: absolute;
+			top: 10rem;
+			right: 2rem;
+            font-size: clamp(2rem, 5vw, 4rem);
+			font-weight: bold;    /* fett */
+			color: darkblue;      /* Farbe */
         }
 
         h2 {
@@ -101,7 +111,6 @@
     <nav>
         <div class="logo">Art Design by Christiane Heinrich</div>
         <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#ueber-mich">Über mich</a></li>
             <li><a href="#galerie">Galerie</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
@@ -110,20 +119,36 @@
 
     <header>
         <div>
-            <h1></h1>
-            <p></p> 
+            <h1>Inspiration auf Leinwand<br>Zeitgenössische Kunst und Malerei</h1>
         </div>
     </header>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Ein Einblick in meine aktuellen Werke und künstlerischen Schwerpunkte.</p>
-    </section>
-
     <section id="ueber-mich">
-        <h2>Über mich</h2>
-        <p>Hier erfährt der Besucher mehr über deinen Werdegang, deinen Stil und was dich als Künstlerin antreibt.</p>
-    </section>
+		<h2>Über mich</h2>		
+		<div class="container">		
+			<img src="che_02.jpeg" alt="Mein Bild" class="bild">
+			<p>
+				Schon als 4 jähriges Kind fing ich mit dem Malen an. 
+				Diese Kunstfertigkeit habe ich mehr und mehr ausbauen können, 
+				so dass schon in frühen Jahren Aufträge für Malarbeiten bekam. 
+				Später fokussierte ich mich mehr auf Landschaftsmalerei und Frauenbilder, 
+				die ich überwiegend mit Acrylfarben ausführte. 
+				Weiterhin interessiert mich aber auch die experimentelle Kunst, 
+				so dass ich auch schon mal Materialien mische. 
+				Auf meinen Ausstellungen sind hauptsächlich meine lustigen Bilder gefragt. 
+				Ich bemale aber auch Hauswände und Garagentore. 
+				Die Malerei ist meine Passion und ich kann mich in ihr mental ausdrücken.
+			</p>
+			<style>
+			.bild {
+				float: left;
+				width: 15rem;
+				margin-right: 2rem;
+				margin-bottom: 1rem;
+			}
+			</style>
+        </div>
+	</section>
 
     <section id="galerie">
         <h2>Galerie</h2>
@@ -151,6 +176,27 @@
         <p>Interesse an einem Werk oder einer Auftragsarbeit? Schreib mir!</p>
         <p>E-Mail: chrissii2003@gmail.com</p>
     </section>
+
+	<section id="impressum">
+		<h2>Impressum</h2>
+
+		<p>
+			<strong>Angaben gemäß § 5 DDG</strong>
+		</p>
+
+		<p>
+			Christiane Heinrich<br>
+			Kunstmalerin<br>
+			Kleinharrier Straße 20<br>
+			24625 Großharrie<br>
+			Deutschland
+		</p>
+
+		<p>
+			E-Mail:
+			<a href="mailto:chrissii2003@gmail.com">chrissii2003@gmail.com</a>
+		</p>
+	</section>
 
     <footer>
         <p>&copy; 2026 Kunstmalerin Christiane Heinrich - Alle Rechte vorbehalten.</p>
